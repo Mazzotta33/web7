@@ -1,41 +1,54 @@
-# Ruby on Rails Tutorial sample application
+# Лабораторная работа 7 — Sign Up
 
-This is the sample application for the
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](https://www.railstutorial.org/)
-by [Michael Hartl](https://www.michaelhartl.com/).
+Методичка: `../methodical/Ch7.odt`. Ruby 3.4.11, Rails 8.1.4,
+Bundler 4.0.21, SQLite в development/test.
 
-## License
+## Запуск
 
-All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
-is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
+Откройте терминал в папке `web7`:
 
-## Getting started
-
-To get started with the app, clone the repo and then install the needed gems:
-
-```
-$ bundle install
+```powershell
+chcp 65001
+rails server -p 3007
 ```
 
-Next, migrate the database:
+В браузере: **http://localhost:3007/signup**.
+Остановка сервера — Ctrl+C. `chcp 65001` включает UTF-8 для кириллицы в пути;
+выполняйте один раз в новом терминале.
 
-```
-$ rails db:migrate
-```
+Если запускаете единственный проект, достаточно `rails server`:
+тогда адрес будет http://localhost:3000.
 
-Finally, run the test suite to verify that everything is working correctly:
+## Подготовка после изменения зависимостей или в новой копии
 
-```
-$ rails test
-```
-
-If the test suite passes, you'll be ready to run the app in a local server:
-
-```
-$ rails server
+```powershell
+bundle install
+rails db:prepare
+rails dartsass:build
 ```
 
-For more information, see the
-[*Ruby on Rails Tutorial* book](https://www.railstutorial.org/book).
+После изменения SCSS повторите `rails dartsass:build` или откройте второй
+терминал в папке проекта и запустите `rails dartsass:watch`.
+
+## Остальные команды
+
+```powershell
+rails test
+rails console
+rails dbconsole
+rails routes
+```
+
+Если терминал открыт до установки Ruby, закройте и откройте его снова,
+чтобы обновился PATH. Для ручного запуска `ruby bin/rails` в пути с кириллицей
+сначала выполните `chcp 65001`.
+
+Windows запускает Puma и тесты в одном процессе; настройки Linux сохранены.
+База проекта: `storage/development.sqlite3`.
+
+## Содержание главы
+
+Регистрация `/signup`, ошибки формы, strong parameters, профиль `/users/:id`,
+Gravatar, flash и debug в development. Вход в аккаунт относится к главе 8.
+Production настроен на HTTPS, Puma и PostgreSQL; публикация на хостинге
+в локальную проверку не входит.

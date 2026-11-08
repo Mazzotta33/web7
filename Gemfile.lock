@@ -84,6 +84,7 @@ GEM
     base64 (0.3.0)
     bcrypt (3.1.22)
     bcrypt_pbkdf (1.1.2)
+    bcrypt_pbkdf (1.1.2-x64-mingw-ucrt)
     bigdecimal (4.1.3)
     bindex (0.8.1)
     bootsnap (1.26.0)
@@ -130,6 +131,7 @@ GEM
     ffi (1.17.4-aarch64-linux-musl)
     ffi (1.17.4-arm-linux-gnu)
     ffi (1.17.4-arm-linux-musl)
+    ffi (1.17.4-x64-mingw-ucrt)
     ffi (1.17.4-x86_64-linux-gnu)
     ffi (1.17.4-x86_64-linux-musl)
     formatador (1.2.3)
@@ -146,6 +148,9 @@ GEM
       bigdecimal
       rake (~> 13.3)
     google-protobuf (4.36.2-aarch64-linux-musl)
+      bigdecimal
+      rake (~> 13.3)
+    google-protobuf (4.36.2-x64-mingw-ucrt)
       bigdecimal
       rake (~> 13.3)
     google-protobuf (4.36.2-x86_64-linux-gnu)
@@ -254,6 +259,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.19.4-arm-linux-musl)
       racc (~> 1.4)
+    nokogiri (1.19.4-x64-mingw-ucrt)
+      racc (~> 1.4)
     nokogiri (1.19.4-x86_64-linux-gnu)
       racc (~> 1.4)
     nokogiri (1.19.4-x86_64-linux-musl)
@@ -266,6 +273,12 @@ GEM
     parser (3.3.12.0)
       ast (~> 2.4.1)
       racc
+    pg (1.7.0)
+    pg (1.7.0-aarch64-linux)
+    pg (1.7.0-aarch64-linux-musl)
+    pg (1.7.0-x64-mingw-ucrt)
+    pg (1.7.0-x86_64-linux)
+    pg (1.7.0-x86_64-linux-musl)
     pp (0.6.4)
       prettyprint
     prettyprint (0.2.1)
@@ -383,6 +396,8 @@ GEM
       google-protobuf (~> 4.31)
     sass-embedded (1.106.1-arm-linux-musleabihf)
       google-protobuf (~> 4.31)
+    sass-embedded (1.106.1-x64-mingw-ucrt)
+      google-protobuf (~> 4.31)
     sass-embedded (1.106.1-x86_64-linux-gnu)
       google-protobuf (~> 4.31)
     sass-embedded (1.106.1-x86_64-linux-musl)
@@ -416,6 +431,7 @@ GEM
     sqlite3 (2.9.6-aarch64-linux-musl)
     sqlite3 (2.9.6-arm-linux-gnu)
     sqlite3 (2.9.6-arm-linux-musl)
+    sqlite3 (2.9.6-x64-mingw-ucrt)
     sqlite3 (2.9.6-x86_64-linux-gnu)
     sqlite3 (2.9.6-x86_64-linux-musl)
     sshkit (1.25.1)
@@ -438,6 +454,8 @@ GEM
       railties (>= 7.1.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2026.6)
+      tzinfo (>= 1.0.0)
     unicode-display_width (3.3.0)
       unicode-emoji (~> 4.3)
     unicode-emoji (4.3.0)
@@ -462,6 +480,7 @@ PLATFORMS
   aarch64-linux-musl
   arm-linux-gnu
   arm-linux-musl
+  x64-mingw-ucrt
   x86_64-linux
   x86_64-linux-gnu
   x86_64-linux-musl
@@ -482,6 +501,7 @@ DEPENDENCIES
   jbuilder
   kamal
   minitest-reporters
+  pg
   propshaft
   puma (>= 5.0)
   rails (~> 8.1.4)
@@ -518,6 +538,7 @@ CHECKSUMS
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   bcrypt (3.1.22) sha256=1f0072e88c2d705d94aff7f2c5cb02eb3f1ec4b8368671e19112527489f29032
   bcrypt_pbkdf (1.1.2) sha256=c2414c23ce66869b3eb9f643d6a3374d8322dfb5078125c82792304c10b94cf6
+  bcrypt_pbkdf (1.1.2-x64-mingw-ucrt)
   bigdecimal (4.1.3) sha256=61ebe1e5e559bdc3cc6f2c0ee7f427321fc838f59611c294356eb04d6e21cf66
   bindex (0.8.1) sha256=7b1ecc9dc539ed8bccfc8cb4d2732046227b09d6f37582ff12e50a5047ceb17e
   bootsnap (1.26.0) sha256=ca96237015e6cd74a02963d5821cf00ac5ea134653b323e8cd6d702a7718bf1b
@@ -545,6 +566,7 @@ CHECKSUMS
   ffi (1.17.4-aarch64-linux-musl) sha256=9286b7a615f2676245283aef0a0a3b475ae3aae2bb5448baace630bb77b91f39
   ffi (1.17.4-arm-linux-gnu) sha256=d6dbddf7cb77bf955411af5f187a65b8cd378cb003c15c05697f5feee1cb1564
   ffi (1.17.4-arm-linux-musl) sha256=9d4838ded0465bef6e2426935f6bcc93134b6616785a84ffd2a3d82bc3cf6f95
+  ffi (1.17.4-x64-mingw-ucrt)
   ffi (1.17.4-x86_64-linux-gnu) sha256=9d3db14c2eae074b382fa9c083fe95aec6e0a1451da249eab096c34002bc752d
   ffi (1.17.4-x86_64-linux-musl) sha256=3fdf9888483de005f8ef8d1cf2d3b20d86626af206cbf780f6a6a12439a9c49e
   formatador (1.2.3) sha256=19fa898133c2c26cdbb5d09f6998c1e137ad9427a046663e55adfe18b950d894
@@ -553,6 +575,7 @@ CHECKSUMS
   google-protobuf (4.36.2) sha256=2f8daff50ae14aad36ab0ccdcf284065fa71d726c444efe114e6db82ffe62494
   google-protobuf (4.36.2-aarch64-linux-gnu) sha256=c3279ec6eaa59f6ed6276eda2a33cffb4306471183ab79a332e698b8564f5169
   google-protobuf (4.36.2-aarch64-linux-musl) sha256=0772c9dde1e6dce9a6b44d1d35c28c29adee99d9bd6aff5e21840daeb22161ce
+  google-protobuf (4.36.2-x64-mingw-ucrt)
   google-protobuf (4.36.2-x86_64-linux-gnu) sha256=d25a820873e423f1d209ae8c672a4a28b019e2429debd0901d26670a0b4e14db
   google-protobuf (4.36.2-x86_64-linux-musl) sha256=0fa17686c896da96a60a705e56ddc7d4ff56413f52787c655bd4c9fb33ffe14f
   guard (2.20.2) sha256=2d0574d35619669f2f71739a0313290810b9cf66b2263f5d97e815fcce598d4d
@@ -594,12 +617,19 @@ CHECKSUMS
   nokogiri (1.19.4-aarch64-linux-musl) sha256=35c65b9ce72b3bb03207bdbe7067915019dc18c1b9b59139684bd6690fdd01af
   nokogiri (1.19.4-arm-linux-gnu) sha256=a301313e38bb065d68239e79734bcd6f56fb6efaacebde29e9abf2a4735340ca
   nokogiri (1.19.4-arm-linux-musl) sha256=588923c101bcfa78869734d247d25b598674323e7f22474fc468f6e5647311eb
+  nokogiri (1.19.4-x64-mingw-ucrt)
   nokogiri (1.19.4-x86_64-linux-gnu) sha256=379fae440b28915e3f19d752ce2dcf8465ed2b2fbefd2a7ca0dd497bc981a06a
   nokogiri (1.19.4-x86_64-linux-musl) sha256=17dfb7c1fa194ae02fbf7c51a7afc8d278045ab3fdacfd86f91d02d7b274470b
   notiffany (0.1.3) sha256=d37669605b7f8dcb04e004e6373e2a780b98c776f8eb503ac9578557d7808738
   ostruct (0.6.3) sha256=95a2ed4a4bd1d190784e666b47b2d3f078e4a9efda2fccf18f84ddc6538ed912
   parallel (2.3.0) sha256=f75a3e904101ce6a1ccb6b8dc800cbafd42166d83330192438dcf29395167a6f
   parser (3.3.12.0) sha256=21a6d7f755d5a24dfbdc6e6b772e4e879a52e7631a88bc5a3a134606052c9828
+  pg (1.7.0) sha256=f7b536501284e883d4c9ef86dbde0313063e4aaafc23575b0017b0d572a26afb
+  pg (1.7.0-aarch64-linux) sha256=101dd3a261000eb64b03ff41a5890674b735b626dbdce88652969b59fb0b1157
+  pg (1.7.0-aarch64-linux-musl) sha256=5ca4d4619a1a39fb22de47350130956ece69cf0512858ee68dca926e46f65e4a
+  pg (1.7.0-x64-mingw-ucrt) sha256=49294a4fe50746289f67a3eccccba32bcd65d52c39429e4a2bc7ea37b29583fe
+  pg (1.7.0-x86_64-linux) sha256=d0a24f448b3c874c8b2658d4efbbbefce7315c228ede84f6f6f42089d1d704b6
+  pg (1.7.0-x86_64-linux-musl) sha256=0c9bc93b6e0aca2a5b07daef00b7ec4f9882bfe21ef3872b4371f8ecffe1f1e1
   pp (0.6.4) sha256=dfcb0fce700c41456265922884f9fe195d7fbb0674a3578e6c0f69588e82b570
   prettyprint (0.2.1) sha256=d555d57ea6d7cf001d4774b693546a6bd88bec1e778ddffb5c60b68ceec4b7d4
   prism (1.9.0) sha256=7b530c6a9f92c24300014919c9dcbc055bf4cdf51ec30aed099b06cd6674ef85
@@ -638,6 +668,7 @@ CHECKSUMS
   sass-embedded (1.106.1-aarch64-linux-musl) sha256=10bfb659eed2579049281095d051ef1834389404d5f5062bdd276733934e0e84
   sass-embedded (1.106.1-arm-linux-gnueabihf) sha256=b1a68f22e0a04c897210435ea2153dfac9abc4cc57ded094054e985152b5944f
   sass-embedded (1.106.1-arm-linux-musleabihf) sha256=a77ad844ed78ef8b1eea427238110be7ad0312b0c93a6b8afc5fd1db2664877c
+  sass-embedded (1.106.1-x64-mingw-ucrt)
   sass-embedded (1.106.1-x86_64-linux-gnu) sha256=2d0fb805f990a8328aa590cb201efbe21e26c98364107632e0ea5fc6b4a988c6
   sass-embedded (1.106.1-x86_64-linux-musl) sha256=28e5a7a82abd5d68fe56df7d44e6706c66f4e27d05123dd36966dc441a7dee50
   sassc (2.4.0) sha256=4c60a2b0a3b36685c83b80d5789401c2f678c1652e3288315a1551d811d9f83e
@@ -651,6 +682,7 @@ CHECKSUMS
   sqlite3 (2.9.6-aarch64-linux-musl) sha256=3579e1c98cdc7ff5c3722847bb63ed4e1efb7ff675cb5e1e48ef2d4da5fb3bc9
   sqlite3 (2.9.6-arm-linux-gnu) sha256=33541500e3615da02afe54a9cc38b17a6985d3cf9d8b76d6d0a83002f114e7ec
   sqlite3 (2.9.6-arm-linux-musl) sha256=c5490af48bb228fefa54314e9541375c3907e70f8109f3881b5ff97e1c93ae33
+  sqlite3 (2.9.6-x64-mingw-ucrt)
   sqlite3 (2.9.6-x86_64-linux-gnu) sha256=613188ce02f614126ddbc38c5e217ccffd6306d0dcd9adca9764547aa890a634
   sqlite3 (2.9.6-x86_64-linux-musl) sha256=d493b11818a3573387a1d56e1ee8fa00da23a683a7a1cc063e7a0feeed843abf
   sshkit (1.25.1) sha256=be3f10b9d6eb0b44d5eaba3f7cbe41bc6bb894bce4339688ac20124391455b78
@@ -663,6 +695,7 @@ CHECKSUMS
   tsort (0.2.0) sha256=9650a793f6859a43b6641671278f79cfead60ac714148aabe4e3f0060480089f
   turbo-rails (2.0.23) sha256=ee0d90733aafff056cf51ff11e803d65e43cae258cc55f6492020ec1f9f9315f
   tzinfo (2.0.6) sha256=8daf828cc77bcf7d63b0e3bdb6caa47e2272dcfaf4fbfe46f8c3a9df087a829b
+  tzinfo-data (1.2026.6)
   unicode-display_width (3.3.0) sha256=4b7aa66a4b11db50f6f7e98411215cd0dd10eaecb665d36eec5bcacb3fa0b613
   unicode-emoji (4.3.0) sha256=11c02fa73290378c066bb0562cd4c87d8e1b706fbbe0059ca12746a4244de8ce
   uri (1.1.2) sha256=89292e98eabbef6248b0a0ed5e7e398e152f83f17560023a6d94a7f492b169fb
